@@ -1,0 +1,113 @@
+html {
+    touch-action: manipulation;
+}
+
+.wrapper-container {
+    display: inline-block;
+}
+
+.tetris-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: #333333;
+}
+
+.board-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.board-table td {
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px black;
+    background-color: black;
+}
+
+td.block-type-0 {
+    background-color: #00ffff;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #008080 solid;
+    border-bottom: 1px #008080 solid;
+}
+
+td.block-type-1 {
+    background-color: #ffff00;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #808000 solid;
+    border-bottom: 1px #808000 solid;
+}
+
+td.block-type-2 {
+    background-color: #00ff00;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #008000 solid;
+    border-bottom: 1px #008000 solid;
+}
+
+td.block-type-3 {
+    background-color: #ff0000;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #800000 solid;
+    border-bottom: 1px #800000 solid;
+}
+
+td.block-type-4 {
+    background-color: #0000ff;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #000080 solid;
+    border-bottom: 1px #000080 solid;
+}
+
+td.block-type-5 {
+    background-color: #ffa500;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ff5200 solid;
+    border-bottom: 1px #ff5200 solid;
+}
+
+td.block-type-6 {
+    background-color: #ff00ff;
+    border-top: 1px #ffffff solid;
+    border-left: 1px #ffffff solid;
+    border-right: 1px #800080 solid;
+    border-bottom: 1px #800080 solid;
+}
+
+.tetris-panel-container {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    color: white;
+    background-color: #333333;
+}
+
+.tetris-panel-container-padding {
+    flex-grow: 1;
+}
+
+.tetris-panel-container p {
+   margin: 0;
+   padding: 0;
+}
+
+.tetris-button-panel {
+    border-style: none;
+    width: 100%;
+}
+
+.tetris-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: #444444;
+}
