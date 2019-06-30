@@ -171,7 +171,6 @@ class Tetris extends React.Component {
     }
     this.drawStage();
     if (this.currentBlock != null) {
-      console.log("currentBlock draw!");
       this.drawBlock(this.blockX, this.blockY,
           this.currentBlock, this.blockAngle, this.boardTable);
     }
@@ -206,7 +205,6 @@ class Tetris extends React.Component {
 
   drawNextBlock() {
     this.clear(this.nextTable);
-    console.log("nextBlock draw!");
     this.drawBlock(2, 1, this.nextBlock, 0, this.nextTable);
   }
 
@@ -353,13 +351,13 @@ class Tetris extends React.Component {
               <tbody>
               <tr>
                 <td></td>
-                <td id="tetris-rotate-button" className="tetris-button">↻</td>
+                <td id="tetris-rotate-button" className="tetris-button" onMouseDown = {this.rotate.bind(this)}>↻</td>
                 <td></td>
               </tr>
               <tr>
-                <td id="tetris-move-left-button"className="tetris-button">←</td>
-                <td id="tetris-fall-button" className="tetris-button">↓</td>
-                <td id="tetris-move-right-button" className="tetris-button">→</td>
+                <td id="tetris-move-left-button"className="tetris-button" onMouseDown = {this.moveLeft.bind(this)}>←</td>
+                <td id="tetris-fall-button" className="tetris-button" onMouseDown = {this.fall.bind(this)}>↓</td>
+                <td id="tetris-move-right-button" className="tetris-button" onMouseDown = {this.moveRight.bind(this)}>→</td>
               </tr>
               </tbody>
             </table>
